@@ -124,7 +124,7 @@
 
 .main.col_10 {
     height: calc(100vh - 88px);
-    margin-left: auto;
+
 }
 
 .top_bar.col_12,
@@ -132,7 +132,9 @@
     height: 90px;
 }
 
-
+.overflow {
+    overflow: auto;
+}
 
 .btm_bar.col_12 {
     height: 88px;
