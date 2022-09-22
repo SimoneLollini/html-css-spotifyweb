@@ -122,18 +122,18 @@ img {
 
 
 /* #region utility */
-.container_90 {
-    width: 90%;
-    margin: auto;
-}
-
 .container {
     width: 100%;
     height: 100vh;
 }
 
+.container_90 {
+    width: 90%;
+    margin: auto;
+}
+
 .container_sm {
-    width: 50%;
+    width: 65%;
     margin: auto;
 }
 
@@ -147,6 +147,7 @@ img {
     border: 2px solid var(--sp-lighter);
     border-radius: 1.5rem;
     padding: 0.5rem 1.5rem;
+    font-size: 12px;
 }
 
 /* #endregion utility */
@@ -198,10 +199,10 @@ img {
 
 
 .playlist {
-    padding: 0 1rem;
+    padding: 1rem 1rem;
 }
 
-.active {
+.side_menu .active {
     box-shadow: inset 3px 0 var(--sp-active);
 }
 
@@ -249,7 +250,7 @@ nav h3 {
 }
 
 .playlist_name.text {
-    padding-top: 1rem;
+    padding-top: 3%;
 }
 
 .side_menu.bottom .call_to_action,
@@ -258,7 +259,7 @@ nav h3 {
 }
 
 .side_menu.bottom .call_to_action img {
-    width: 8%;
+    width: 15px;
     filter: invert(53%) sepia(5%) saturate(351%) hue-rotate(185deg) brightness(93%) contrast(83%);
     margin-right: 0.25rem;
 }
@@ -273,7 +274,7 @@ nav h3 {
 }
 
 .avatar img {
-    width: 8%;
+    width: 30px;
     background-color: var(--sp-dirty-light);
     border-radius: 50%;
     aspect-ratio: 1/1;
@@ -297,7 +298,6 @@ nav h3 {
 
 .top_bar.col_12 {
     background-color: var(--sp-darker-blue);
-
 }
 
 .main.col_10 {
@@ -319,10 +319,11 @@ nav.main_menu {
     padding-top: 1rem;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 nav.main_menu .text {
-    font-size: 0.85rem;
+    font-size: 14px;
 }
 
 .album_bot {
@@ -341,7 +342,6 @@ nav.main_menu .text {
 
 .title>h2 {
     font-size: 28px;
-
 }
 
 .title>.text {
@@ -370,13 +370,20 @@ nav.main_menu .text {
     background-color: var(--sp-dark);
 }
 
+.main_menu>a {
+    padding: 3% 0;
+    flex-shrink: 0;
+}
+
 .main_menu>a .container_sm {
     border-bottom: 2px solid var(--sp-active);
     padding-top: 0.15rem;
     visibility: hidden;
 }
 
-
+a .container_sm.active {
+    visibility: visible;
+}
 
 /************************************************
 *************************************************
@@ -388,9 +395,51 @@ Media querry Media querry Media querry Media querry
 *************************************************/
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 878px) {
     .main_content .col_2 {
         width: calc(100% / 4);
     }
 
+    nav.main_menu {
+        justify-content: space-around;
+    }
+
+    .main_content>.container_sm {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .main_content .col_2 {
+        width: calc(100% / 2);
+    }
+
+
+}
+
+@media screen and (max-width: 550px) {
+    .side_menu.col_2 {
+        width: 50px;
+    }
+
+    .side_menu .side_menu .text,
+    .logo img,
+    .side_menu .playlist {
+        display: none;
+    }
+
+    .side_menu.bottom .call_to_action {
+        border-bottom: none;
+    }
+
+    .main.col_10 {
+        width: calc(100% - 50px);
+    }
+
+    .side_menu .avatar,
+    .side_menu .call_to_action {
+        justify-content: center;
+        margin-top: 1rem;
+        margin-bottom: 0.15rem;
+    }
 }
