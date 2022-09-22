@@ -190,12 +190,21 @@ img {
     align-items: center;
 }
 
+.side_menu .logo_sm {
+    width: 100%;
+    display: none;
+    justify-content: center;
+    padding: 40% 0;
+}
+
 .side_menu .logo img {
     margin-left: 0.80rem;
     width: 60%;
 }
 
-
+.side_menu .logo_sm img {
+    width: 30px;
+}
 
 
 .playlist {
@@ -422,10 +431,16 @@ Media querry Media querry Media querry Media querry
         width: 50px;
     }
 
+
+
     .side_menu .side_menu .text,
-    .logo img,
+    .logo,
     .side_menu .playlist {
         display: none;
+    }
+
+    .side_menu .logo_sm {
+        display: flex;
     }
 
     .side_menu.bottom .call_to_action {
