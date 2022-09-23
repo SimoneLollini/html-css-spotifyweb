@@ -632,7 +632,7 @@ Media querry Media querry Media querry Media querry
 
 @media screen and (max-width: 550px) {
     .main_content {
-        padding: 1%;
+        width: 100%;
     }
 
     .side_menu.col_2 {
