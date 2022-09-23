@@ -393,10 +393,12 @@ a .container_sm.active {
 }
 
 .album_top .item {
+    font-size: 60px;
     position: absolute;
     top: 50%;
     left: 50%;
     translate: -50% -50%;
+
 }
 
 /* #endregion main */
