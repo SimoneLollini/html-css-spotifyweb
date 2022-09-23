@@ -396,9 +396,10 @@ a .container_sm.active {
     font-size: 60px;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 42%;
     translate: -50% -50%;
-
+    color: var(--sp-lighter);
+    visibility: hidden;
 }
 
 /* #endregion main */
@@ -528,6 +529,11 @@ a .container_sm.active {
     filter: opacity(0.1);
     cursor: pointer;
     transition: 300ms;
+}
+
+.img:hover .item {
+    visibility: visible;
+    transition: 350ms;
 }
 
 /* #endregion hover */
