@@ -496,8 +496,25 @@ a .container_sm.active {
 
 /* #region hover */
 .side_menu .text:hover,
-.main_menu .text:hover {
+.main_menu .text:hover,
+.btm_bar .text:hover,
+.btm_bar .item:hover,
+.side_menu .add:hover i {
     color: var(--sp-lighter);
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.btm_bar .text>span:hover,
+.side_menu .call_to_action>.text:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.main_content img:hover {
+    filter: opacity(0.1);
+    cursor: pointer;
+    transition: 300ms;
 }
 
 /* #endregion hover */
