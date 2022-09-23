@@ -493,6 +493,15 @@ a .container_sm.active {
 /* #endregion play_bar */
 
 
+
+/* #region hover */
+.side_menu .text:hover,
+.main_menu .text:hover {
+    color: var(--sp-lighter);
+}
+
+/* #endregion hover */
+
 /************************************************
 *************************************************
 *************************************************
