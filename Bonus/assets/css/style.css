@@ -577,10 +577,13 @@ a .container_sm.active {
     font-size: 1.75remrem;
 }
 
-.progress_bar:hover .button,
-.progress_bar_px:hover .button {
+.progress_bar:hover .button {
     visibility: visible;
     cursor: grab;
+}
+
+.progress_bar:hover .progress_bar_30 {
+    background-color: var(--sp-active);
 }
 
 .progress_bar:hover {

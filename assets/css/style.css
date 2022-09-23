@@ -484,6 +484,18 @@ a .container_sm.active {
     background-color: var(--bg-pr-bar-light);
 }
 
+.button {
+    padding: 4px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: var(--sp-active);
+    border: 2px solid var(--bg-pr-bar-light);
+    top: 50%;
+    left: 30%;
+    translate: -50% -50%;
+    visibility: hidden;
+}
+
 .time,
 .command .item a {
     color: var(--sp-lighter);
@@ -565,6 +577,19 @@ a .container_sm.active {
     font-size: 1.75remrem;
 }
 
+.progress_bar:hover .button {
+    visibility: visible;
+    cursor: grab;
+}
+
+.progress_bar:hover .progress_bar_30 {
+    background-color: var(--sp-active);
+}
+
+.progress_bar:hover {
+    cursor: pointer;
+}
+
 /* #endregion hover */
 
 /************************************************
@@ -603,7 +628,7 @@ Media querry Media querry Media querry Media querry
         margin: 0.25rem 1rem;
     }
 
-    .progress_bar_px {
+    .audio .progress_bar {
         display: inline-block;
         background-color: var(--bg-pr-bar);
         height: 4px;
@@ -628,7 +653,7 @@ Media querry Media querry Media querry Media querry
         margin: auto;
     }
 
-    .progress_bar_px {
+    .audio .progress_bar {
         display: inline-block;
         background-color: var(--bg-pr-bar);
         height: 4px;
@@ -685,7 +710,7 @@ Media querry Media querry Media querry Media querry
         visibility: hidden;
     }
 
-    .progress_bar_px {
+    .audio .progress_bar {
         display: inline-block;
         background-color: var(--bg-pr-bar);
         height: 4px;
@@ -693,4 +718,20 @@ Media querry Media querry Media querry Media querry
         border-radius: 3px;
         margin: 1% 2%;
     }
+}
+
+@media screen and (max-height:215px) {
+    .top_bar {
+        display: none;
+    }
+
+    .main_content,
+    .side_menu {
+        height: 100%;
+    }
+
+    .audio .progress_bar {
+        display: none;
+    }
+
 }
