@@ -320,6 +320,7 @@ nav h3 {
 .main_content {
     height: calc(100% - 88px);
     padding: 1.45rem;
+    width: 100%;
 }
 
 .main_content .row {
@@ -525,15 +526,34 @@ a .container_sm.active {
     cursor: pointer;
 }
 
-.main_content img:hover {
-    filter: opacity(0.1);
-    cursor: pointer;
-    transition: 300ms;
-}
 
 .img:hover .item {
     visibility: visible;
     transition: 350ms;
+    cursor: pointer;
+}
+
+.img:hover img {
+    filter: opacity(0.1);
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.zoom:hover {
+    transform: scale(1.1);
+    transition: 200ms;
+}
+
+.btm_bar .zoom:hover {
+    font-size: 1.15rem;
+}
+
+.command .zoom:hover {
+    font-size: 1.35rem;
+}
+
+.item_lg.zoom:hover {
+    font-size: 1.75remrem;
 }
 
 /* #endregion hover */
@@ -582,6 +602,10 @@ Media querry Media querry Media querry Media querry
         border-radius: 3px;
         margin: 1% 2%;
     }
+
+    .album_top .item {
+        font-size: 40px;
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -607,10 +631,13 @@ Media querry Media querry Media querry Media querry
 }
 
 @media screen and (max-width: 550px) {
+    .main_content {
+        padding: 1%;
+    }
+
     .side_menu.col_2 {
         width: 50px;
     }
-
 
 
     .side_menu .side_menu .text,
