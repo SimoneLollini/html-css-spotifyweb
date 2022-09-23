@@ -625,7 +625,7 @@ Media querry Media querry Media querry Media querry
         margin: 0.25rem 1rem;
     }
 
-    .progress_bar_px {
+    .audio .progress_bar {
         display: inline-block;
         background-color: var(--bg-pr-bar);
         height: 4px;
@@ -650,7 +650,7 @@ Media querry Media querry Media querry Media querry
         margin: auto;
     }
 
-    .progress_bar_px {
+    .audio .progress_bar {
         display: inline-block;
         background-color: var(--bg-pr-bar);
         height: 4px;
@@ -707,7 +707,7 @@ Media querry Media querry Media querry Media querry
         visibility: hidden;
     }
 
-    .progress_bar_px {
+    .audio .progress_bar {
         display: inline-block;
         background-color: var(--bg-pr-bar);
         height: 4px;
@@ -727,5 +727,8 @@ Media querry Media querry Media querry Media querry
         height: 100%;
     }
 
+    .audio .progress_bar {
+        display: none;
+    }
 
 }
