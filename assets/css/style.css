@@ -388,6 +388,17 @@ a .container_sm.active {
     visibility: visible;
 }
 
+.album_top .img {
+    position: relative;
+}
+
+.album_top .item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+
 /* #endregion main */
 
 /* #region play_bar */
