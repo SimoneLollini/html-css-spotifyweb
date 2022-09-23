@@ -685,3 +685,17 @@ Media querry Media querry Media querry Media querry
         margin: 1% 2%;
     }
 }
+
+
+@media screen and (max-height:215px) {
+    .top_bar {
+        display: none;
+    }
+
+    .main_content,
+    .side_menu {
+        height: calc(100% - 88px);
+    }
+
+
+}
