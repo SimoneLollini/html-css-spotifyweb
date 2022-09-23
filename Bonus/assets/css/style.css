@@ -484,6 +484,18 @@ a .container_sm.active {
     background-color: var(--bg-pr-bar-light);
 }
 
+.button {
+    padding: 4px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: var(--sp-active);
+    border: 2px solid var(--bg-pr-bar-light);
+    top: 50%;
+    left: 30%;
+    translate: -50% -50%;
+    visibility: hidden;
+}
+
 .time,
 .command .item a {
     color: var(--sp-lighter);
@@ -563,6 +575,16 @@ a .container_sm.active {
 
 .item_lg.zoom:hover {
     font-size: 1.75remrem;
+}
+
+.progress_bar:hover .button,
+.progress_bar_px:hover .button {
+    visibility: visible;
+    cursor: grab;
+}
+
+.progress_bar:hover {
+    cursor: pointer;
 }
 
 /* #endregion hover */
