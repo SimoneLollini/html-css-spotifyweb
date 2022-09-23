@@ -702,7 +702,7 @@ Media querry Media querry Media querry Media querry
 
     .main_content,
     .side_menu {
-        height: calc(100% - 88px);
+        height: 100%;
     }
 
 
